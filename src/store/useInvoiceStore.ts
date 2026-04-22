@@ -1,20 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-
-export interface Invoice {
-  id: string;
-  createdAt: string;
-  paymentDue: string;
-  description: string;
-  paymentTerms: number;
-  clientName: string;
-  clientEmail: string;
-  status: 'paid' | 'pending' | 'draft';
-  senderAddress: { street: string; city: string; postCode: string; country: string };
-  clientAddress: { street: string; city: string; postCode: string; country: string };
-  items: { name: string; quantity: number; price: number; total: number }[];
-  total: number;
-}
+import { initialInvoices } from '../data'; 
+import { Invoice } from '../types/index';
 
 interface InvoiceState {
   invoices: Invoice[];
@@ -29,7 +16,8 @@ interface InvoiceState {
 export const useInvoiceStore = create<InvoiceState>()(
   persist(
     (set) => ({
-      invoices: [], 
+      invoices: initialInvoices, 
+      
       filterStatuses: [],
       addInvoice: (invoice) => 
         set((state) => ({ invoices: [invoice, ...state.invoices] })),
