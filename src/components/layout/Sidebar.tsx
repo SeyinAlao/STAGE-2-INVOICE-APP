@@ -1,5 +1,7 @@
 import React from 'react';
 import { useThemeStore } from '../../store/useThemeStore';
+import Logo from '../../assets/Group 9.svg';
+import Avatar from '../../assets/Oval.svg';
 
 export const Sidebar = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -9,7 +11,7 @@ export const Sidebar = () => {
       
       <div className="relative flex h-[72px] w-[72px] items-center justify-center overflow-hidden rounded-br-[20px] rounded-tr-[20px] bg-primary md:h-[80px] md:w-[80px] lg:h-[103px] lg:w-[103px]">
         <div className="absolute bottom-0 h-[50%] w-full rounded-tl-[20px] bg-primary-light"></div>
-        <img src="/src/assets/Group 9.svg" alt="App Logo" className="relative z-10 w-7 md:w-8 lg:w-10" />
+        <img src={Logo} alt="App Logo" className="relative z-10 w-7 md:w-8 lg:w-10" />
       </div>
 
       <div className="flex h-[72px] flex-row items-center justify-end md:h-[80px] lg:h-auto lg:w-full lg:flex-col">
@@ -32,7 +34,7 @@ export const Sidebar = () => {
         <div className="h-full w-[1px] bg-[#494E6E] lg:h-[1px] lg:w-full"></div>
         
         <div className="ml-6 mr-6 flex items-center lg:mb-6 lg:ml-0 lg:mr-0 lg:mt-6">
-          <img src="/src/assets/Oval.svg" alt="User Avatar" className="h-8 w-8 rounded-full md:h-10 md:w-10" />
+          <img src={Avatar} alt="User Avatar" className="h-8 w-8 rounded-full md:h-10 md:w-10" />
         </div>
       </div>
       
