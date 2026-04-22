@@ -2,27 +2,6 @@
 
 A fully responsive, full-stack Invoice Management Application built with React. This application allows users to create, read, update, and delete invoices, filter by status, and toggle between light and dark modes, all while persisting data locally.
 
-## 🚀 Setup Instructions
-
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone <your-repository-url>
-   cd <repository-folder>
-   ```
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open your browser and navigate to `http://localhost:5173` (or the port specified in your terminal).
-
 ## 🏗 Architecture Explanation
 
 This application is built as a modern React Single Page Application (SPA) using the following stack:
