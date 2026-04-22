@@ -1,3 +1,35 @@
+# 🧾 Invoice Management Application
+
+A fully responsive, full-stack **Invoice Management Application** built with **React + TypeScript**.
+
+This application allows users to:
+- Create, read, update, and delete invoices
+- Filter invoices by status (Paid, Pending, Draft)
+- Toggle between light and dark mode
+- Persist data locally using browser storage
+
+---
+
+## 🚀 Setup Instructions
+
+### Prerequisites
+- Install Node.js → https://nodejs.org/
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <your-repository-url>
+
+# Navigate into the project
+cd <repository-folder>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
