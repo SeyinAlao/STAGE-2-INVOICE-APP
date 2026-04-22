@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // Crucial for our manual theme toggle
+  darkMode: 'class', 
   theme: {
     extend: {
       colors: {
@@ -15,7 +15,7 @@ export default {
         navy: {
           DEFAULT: '#1E2139',
           dark: '#252945',
-          darker: '#141625', // Sidebar in dark mode
+          darker: '#141625', 
         },
         gray: {
           light: '#F8F8FB', // Light mode background
